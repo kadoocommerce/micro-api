@@ -7,4 +7,6 @@
 /public/bundles/
 /var/
 /vendor/
+config/secrets/dev/dev.decrypt.private.php
+config/secrets/dev/dev.encrypt.public.php
 ###< symfony/framework-bundle ###
