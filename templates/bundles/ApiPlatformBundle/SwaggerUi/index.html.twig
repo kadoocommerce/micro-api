@@ -1,0 +1,30 @@
+{% extends '@!ApiPlatform/SwaggerUi/index.html.twig' %}
+
+{% block header %}
+    <header>
+        <a id="logo" href="/">
+            <img src="{{ asset('/logo.png', assetPackage) }}" alt="{% if title %}{{ title }}{% endif %}" />
+        </a>
+    </header>
+{% endblock %}
+
+{% block stylesheet %}
+    {{ parent() }}
+    <style>
+        .scheme-container {
+            display: none;
+        }
+
+        #logo {
+            left: 15px;
+        }
+
+        header #logo img {
+            background: none !important;
+        }
+
+        header::before {
+            background-color: #efefef;
+        }
+    </style>
+{% endblock %}

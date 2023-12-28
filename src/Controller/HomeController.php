@@ -13,4 +13,12 @@ class HomeController
             'version' => '1.0.0',
         ]);
     }
+
+    #[Route('/health')]
+    public function health()
+    {
+        return new JsonResponse([
+            'status' => 'OK',
+        ]);
+    }
 }

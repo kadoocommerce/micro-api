@@ -1,12 +1,18 @@
 api_platform:
-    title: Hello API Platform
+    title: '%env(resolve:APP_NAME)%'
     version: 1.0.0
+    #enable_swagger_ui: false
+    show_webby: false
     formats:
         jsonld: ['application/ld+json']
     docs_formats:
         jsonld: ['application/ld+json']
         jsonopenapi: ['application/vnd.openapi+json']
         html: ['text/html']
+    openapi:
+        contact:
+            name: API Team
+            email:
     defaults:
         stateless: true
         cache_headers:
